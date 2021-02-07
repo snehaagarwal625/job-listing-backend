@@ -13,7 +13,7 @@ export class MailService {
                 
                 auth: {
                   user: 'snehaagarwal625@gmail.com',
-                  pass: 'sneha625',
+                  pass: '*****',
                 }
             });
 
