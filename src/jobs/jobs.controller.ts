@@ -18,6 +18,8 @@ export class JobsController {
   // post api for a job
   @Post()
   saveJob(@Body() createJobDto: CreateJobDto): Promise<Job> {
+    console.log(createJobDto);
+    
     return this.jobService.createJob(createJobDto);  
   }
 

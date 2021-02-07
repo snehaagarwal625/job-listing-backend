@@ -15,6 +15,9 @@ export class Job  extends BaseEntity{
     description:string;
 
     @Column()
+    company:string;
+
+    @Column()
     locality:string;
 
     @Column()
@@ -40,7 +43,6 @@ export class Job  extends BaseEntity{
     @OneToOne(type=> Employer)
     @JoinColumn({name:'posted_by'})
     employer: Employer;
-
 
     @OneToMany(type => JobUser, jobUser => jobUser.job)
     @JoinColumn({name: 'id'})

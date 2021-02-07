@@ -4,6 +4,9 @@ export class CreateJobDto {
     title: string;
 
     @IsNotEmpty()
+    company: string;
+
+    @IsNotEmpty()
     description: string;
 
     @IsNotEmpty()
